@@ -11,13 +11,14 @@ import {
   FormMessage,
   FormDescription,
   FormControl,
-} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import { productDetailsSchema } from "@/schemas/products";
 import { useToast } from "@/hooks/use-toast";
 import { createProduct } from "@/server/actions/products";
+import { Button } from "@/components/ui/button";
+import { productDetailsSchema } from "@/schemas/products";
+import { Input } from "postcss";
+import { from } from "svix/dist/openapi/rxjsStub";
 
 export function ProductDetailsForm() {
   const { toast } = useToast();
