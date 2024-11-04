@@ -1,6 +1,6 @@
 "use client";
 
-import { Form, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 
@@ -11,6 +11,7 @@ import { createProduct } from "@/server/actions/products";
 import { Button } from "@/components/ui/button";
 import { productDetailsSchema } from "@/schemas/products";
 import {
+  Form,
   FormField,
   FormItem,
   FormLabel,
