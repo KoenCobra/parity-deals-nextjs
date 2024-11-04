@@ -1,24 +1,23 @@
 "use client";
 
-import { useForm } from "react-hook-form";
+import { Form, useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import {
-  Form,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-  FormDescription,
-  FormControl,
+
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { createProduct } from "@/server/actions/products";
 import { Button } from "@/components/ui/button";
 import { productDetailsSchema } from "@/schemas/products";
-import { Input } from "postcss";
-import { from } from "svix/dist/openapi/rxjsStub";
+import {
+  FormField,
+  FormItem,
+  FormLabel,
+  FormControl,
+  FormMessage,
+  FormDescription,
+} from "@/components/ui/form";
 
 export function ProductDetailsForm() {
   const { toast } = useToast();
